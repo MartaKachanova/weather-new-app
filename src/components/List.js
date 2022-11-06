@@ -1,9 +1,6 @@
 import { useState } from "react";
 
-function List() //props
-// const [isLoading, isError, data] = useFetch( "https://api.weatherapi.com/v1/current.json?key=0fad4c06c1af4409aef200446220611&q=" +
-// inputCity +"&aqi=no")
- {
+function List() {
   const [temperature, setTemperature] = useState("");
   const [condition, setCondition] = useState("");
   const [inputCity, setInputCity] = useState("");
@@ -25,9 +22,6 @@ function List() //props
   };
 
   return (
-    // {isLoading && <div style={{textAlign: 'center'}}>LOADING</div>};
-    // {isError&& <div style={{textAlign: 'center'}}>ERROR</div>};
-    // {data &&  }
     <div className="App">
       {error && <div className="error">Такого міста немає</div>}
       {temperature && condition && (
